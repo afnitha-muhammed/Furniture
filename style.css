@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+--brown:brown;
+}
+body{
+    overflow-x: hidden;
+}
+#logo{
+    height: 158px;
+    width: 172px;
+}
+ul li{
+    font-size: 20px;
+}
+li i{
+    color: rgb(169, 169, 169);
+}
+#contact{
+    background-color: var(--brown);
+    color: white;
+}
+#contact:hover{
+    background-color: white;
+    color: var(--brown);
+    border-color: var(--brown);
+}
+/*  for aligning items in mobile view in a proper way*/
+@media (min-width:992px){             
+    ul{
+        display:flex;
+        align-items: center;
+    }
+
+}
+/* hiding icons on mobile view*/
+@media (max-width:992px){
+    li i{
+        visibility: hidden;
+    }
+}
+.main{
+    background-image: url(./img/furniture.jpg);
+    width:100%;
+    height:700px; 
+    background-size:cover ;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+/* setting backgroung with the same size of main to enhance the font by setting oppasity color on background*/
+.bg{
+    width:100%;
+    height:700px; 
+    background-color: rgba(0, 0, 0, 0.222);
+}
+.welcome{
+    padding-top: 200px;
+    padding-left: 100px;
+
+}
+.welcome p{
+        color: white;
+        font-size: 30px;
+}
+.welcome h1{
+    color: white;
+    font-size: 90px;
+    font-weight: 700px;
+    line-height: 80px;
+}
+@media(max-width:600px){
+    .welcome h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .welcome p{
+        font-size: 20px;
+    }
+}
+/*--work--*/
+.work{
+    background-image: url(./img/work-bg.jpg);
+    width:100%;
+    /* height:800px;  */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgg{
+    width:100%;
+    /* height:800px;  */
+    background-color: rgba(255, 255, 255, 0.904);
+}
+.work h2{
+    padding-top:70px;
+    text-align: center;
+}
+.card-img-top{
+    height:400px;
+}
+#view-work{
+    background-color: white;
+    color: var(--brown);
+    border-color: var(--brown);
+}
+#view-work:hover{
+    background-color: var(--brown);
+    color: white;
+    border-color: white;
+}
+
+/*-- end work--*/
+/*-- about --*/
+.about{
+    background-color: rgba(173, 162, 162, 0.358);
+    width:100%;
+    /* height:700px; */
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+}
+#aboutimg{
+    border: 6px solid var(--brown);
+    height:450px;
+    width: 100%;
+}
+.about h1{
+    color: var(--brown);
+}
+.hr{
+    width:20%;
+    height: 4px;
+    background-color: var(--brown);
+}
+/* Gallery */
+.rosewood{
+    width: 25%;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.prjimg{
+    position: relative;
+}
+.diningset{
+    width: 40%;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+/* End Gallery */
+
+/* TESTIMONIALS */
+.testimonials{
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+.testimonials p{
+    margin-left: 8%;
+}
+#tesImg{
+    width:170px;
+    height: 170px;
+    border-radius: 50%;
+}
+/* End TESTIMONIALS */
+/* footer */
+.footer{
+    background-color: rgba(15, 14, 14, 0.675);
+    width:100%;
+    /* height:500px; */
+    margin-top:8%;
+}
+
+/* end footer */
